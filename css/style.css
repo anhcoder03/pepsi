@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wapper {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0065c3;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+#logo .logo-rotate {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: animate 3s infinite linear;
+}
+
+#logo .logo-rotate:hover img {
+    /* transform: scale(1.2); */
+    transform: rotate(360deg);
+    transition: transform 0.2s linear;
+}
+
+/* @keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+} */
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#search input {
+    width: 250px;
+    height: 35px;
+    border-radius: 30px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+}
+
+#search i {
+    margin-left: -35px;
+    font-size: 18px;
+    padding: 12px;
+    background-color: #0065c3;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#dangnhap .dangky {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-image: linear-gradient(to right, #60a8eb, #0062ffee);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#dangnhap .dangnhap {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-image: linear-gradient(to right, #60a8eb, #0062ffee);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#dangnhap .dangky:hover,
+#dangnhap .dangnhap:hover {
+    background-image: linear-gradient(to right, #7a7af0, #0766ffee);
+}
+
+#dangnhap {
+    color: #fff;
+}
+
+
+#content {
+    padding-top: 80px;
+}
+
+.pepsi-nitro-container {
+    padding: 60px 0;
+    width: 100%;
+    height: auto;
+    background: url(../img/Tablet_Background@3x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.pepsi-nitro-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+.pepsi-nitro-left img {
+    width: 80%;
+}
+
+.pepsi-nitro-right img {
+    width: 80%;
+}
+
+.pepsi-nitro-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pepsi-nitro-right h1 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.pepsi-nitro-right button {
+    margin-top: 20px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .pepsi-nitro-container {
+        background: url(../img/Desktop_Background@3x.png);
+        background-position: 62% center;
+    }
+}
+
+
+.pepsi-zero-sugar-container {
+    padding: 60px 0;
+    width: 100%;
+    background: url(../img/PZS-tile-background.png);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pepsi-zero-sugar-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pepsi-zero-sugar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    opacity: 0;
+    transition: all 500ms;
+    transform: translateX(-100%);
+}
+
+.pepsi-zero-sugar-left h1 {
+    font-size: 100px;
+    color: #fff;
+}
+
+.pepsi-zero-sugar-left h2 {
+    margin-top: -50px;
+    font-size: 65px;
+    color: #fff;
+}
+
+.pepsi-zero-sugar-left img {
+    width: 80%;
+}
+
+.pepsi-zero-sugar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.pepsi-zero-sugar-right img{
+    width: 100%;
+}
+
+.pepsi-zero-sugar-right{
+    opacity: 0;
+    transition: all 500ms;
+    transform: translateX(100%);
+}
+
+
+.video-1 {
+    width: 100%;
+}
+
+.video-1 video {
+    width: 100%;
+}
+
+.pepsi-twil-container {
+    width: 100%;
+    margin-top: -5px;
+    padding-top: 50px;
+    background: url(../img/twil-bg.jpg) no-repeat;
+    background-size: cover;
+}
+.content-pepsi-twil-container{
+    width: 100%;
+    height: 584px;
+    overflow: hidden;
+}
+.pepsi-twil-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 45px;
+}
+
+.pepsi-twil-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: all 500ms;
+    opacity: 0;
+}
+
+.pepsi-twil-left img {
+    margin-left: 100px;
+    width: 100%;
+}
+
+.pepsi-twil-right {
+    margin-left: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatex(100%);
+    transition: all 500ms;
+    opacity: 0;
+}
+
+.pepsi-twil-right h1 {
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 150px;
+    line-height: 140px;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.pepsi-twil-right h1 span {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+
+.smell-container {
+    padding: 150px;
+    background: url(../img/04_Generation_BG_D_2.png) no-repeat;
+    background-size: cover;
+}
+
+.smell-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.smell-left {
+    width: 50%;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: all 500ms;
+    opacity: 0;
+}
+
+.smell-left__title h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.smell-disc {
+    margin-top: 20px;
+}
+
+.views-product-btn {
+    margin-top: 20px;
+    position: relative;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.views-product-btn::before {
+    content: "";
+    position: absolute;
+    border-top: 4px solid rgb(0, 247, 255);
+    border-left: 4px solid rgb(0, 247, 255);
+    width: 10px;
+    height: 10px;
+    left: -3px;
+    top: -3px;
+    transition: all 0.4s;
+}
+
+.views-product-btn:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.views-product-btn::after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid rgb(0, 247, 255);
+    border-right: 4px solid rgb(0, 247, 255);
+    width: 10px;
+    height: 10px;
+    right: -3px;
+    bottom: -3px;
+    transition: all 0.4s;
+}
+
+.views-product-btn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.smell-right {
+    width: 50%;
+    transform: translateX(100%);
+    transition: all 500ms;
+    opacity: 0;
+}
+
+.smell-right img {
+    width: 100%;
+}
+
+
+
+.follow-pepsi {
+    margin-top: 10px;
+    height: 464px;
+    overflow: hidden;
+}
+
+.follow-pepsi-container {
+    transform: translateY(60%);
+    transition: all 600ms;
+    opacity: 0;
+}
+
+.follow-pepsi h3 {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #044990;
+    margin: 50px 0;
+    font-family: titleFont;
+}
+
+.follow-item {
+    width: 100%;
+    height: 318px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.follow-item img {
+    filter: brightness(0.6);
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.follow-item:hover img {
+    filter: brightness(0.9);
+    transform: scale3d(1.2, 1.2, 1.2) rotate(10deg);
+}
+
+.follow-item:hover i {
+    opacity: 0.6;
+}
+
+.img-float {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-float i {
+    text-align: center;
+    font-size: 100px;
+    color: #fffaf3;
+    opacity: 0.2;
+}
+
+.follow-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+/* footer */
+
+#footer {
+    background-color: #0065c3;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 30px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-logo .logo-rotate {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: animate 3s infinite linear;
+}
+
+.footer-logo .logo-rotate:hover img {
+    /* transform: scale(1.2); */
+    transform: rotate(360deg);
+    transition: transform 0.2s linear;
+}
+
+.footer-follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-follow button {
+    position: relative;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-follow button::before {
+    content: "";
+    position: absolute;
+    border-top: 4px solid rgb(0, 247, 255);
+    border-left: 4px solid rgb(0, 247, 255);
+    width: 10px;
+    height: 10px;
+    left: -3px;
+    top: -3px;
+    transition: all 0.4s;
+}
+
+.footer-follow button:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-follow button::after {
+    content: "";
+    position: absolute;
+    border-bottom: 4px solid rgb(0, 247, 255);
+    border-right: 4px solid rgb(0, 247, 255);
+    width: 10px;
+    height: 10px;
+    right: -3px;
+    bottom: -3px;
+    transition: all 0.4s;
+}
+
+.footer-follow button:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-social a i {
+    color: #fff;
+    padding: 10px;
+}
