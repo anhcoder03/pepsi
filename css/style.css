@@ -26,30 +26,14 @@
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
-    animation: animate 3s infinite linear;
 }
-
-#logo .logo-rotate:hover img {
-    /* transform: scale(1.2); */
-    transform: rotate(360deg);
-    transition: transform 0.2s linear;
+.logo-rotate img{
+    transition: transform 1s ease-in-out;
+    object-fit: contain;
 }
-
-/* @keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-
-} */
-
+.logo-rotate img:hover{
+    transform: rotate(1440deg);
+}
 #menu {
     display: flex;
     list-style: none;

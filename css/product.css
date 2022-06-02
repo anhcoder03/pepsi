@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wapper {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0065c3;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+#logo .logo-rotate {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-rotate img {
+    transition: transform 1s ease-in-out;
+    object-fit: contain;
+}
+
+.logo-rotate img:hover {
+    transform: rotate(1440deg);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+#search input {
+    width: 250px;
+    height: 35px;
+    border-radius: 30px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+}
+
+#search i {
+    margin-left: -35px;
+    font-size: 18px;
+    padding: 12px;
+    background-color: #0065c3;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#dangnhap .dangky {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-image: linear-gradient(to right, #60a8eb, #0062ffee);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#dangnhap .dangnhap {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-image: linear-gradient(to right, #60a8eb, #0062ffee);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#dangnhap .dangky:hover,
+#dangnhap .dangnhap:hover {
+    background-image: linear-gradient(to right, #7a7af0, #0766ffee);
+}
+
+#dangnhap {
+    color: #fff;
+}
+
+/* content */
+
+#content {
+    padding-top: 80px;
+}
+
+/* slideshow */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.dot-container{
+    margin-top: -40px;
+}
+.active{
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+#product-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 80px;
+}
+
+
+/* ===========================card-left---------------- */
+
+.card-left {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+}
+
+.card-left .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-left .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0065c3;
+    clip-path: circle(120px at center);
+    transition: 1s;
+}
+
+.card-left:hover .circle:before {
+    background: #bb9339;
+    clip-path: circle(400px at center);
+    transition: 0.3s;
+}
+
+.card-left .product-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.7s;
+    object-fit: contain;
+}
+
+.card-left:hover .product-img {
+    left: 24%;
+    height: 500px;
+}
+
+.card-left .content {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 20%;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.card-left:hover .content {
+    right: 2%;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+    transition: 1.4s;
+}
+
+.card-left .content a {
+    position: relative;
+    color: #fff;
+    padding: 10px 0px;
+    border-radius: 8px;
+    background: linear-gradient(to top left, #d61212, #0065c3, #d61212);
+    margin-top: 0px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* =====================card--right================== */
+
+.card-right {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+}
+
+.card-right .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-right .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0065c3;
+    clip-path: circle(120px at center);
+    transition: 1s;
+}
+
+.card-right:hover .circle:before {
+    background: #bb9339;
+    clip-path: circle(400px at center);
+    transition: 0.3s;
+}
+
+.card-right .product-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.7s;
+    object-fit: contain;
+}
+
+.card-right:hover .product-img {
+    left: 76%;
+    height: 500px;
+}
+
+.card-right .content {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 20%;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.card-right:hover .content {
+    left: 2%;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+    transition: 1.4s;
+}
+
+.card-right .content a {
+    position: relative;
+    color: #fff;
+    padding: 10px 0px;
+    border-radius: 8px;
+    background: linear-gradient(to top right, #d61212, #0065c3, #d61212);
+    margin-top: 0px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-left .content a:hover {
+    background: linear-gradient(to top right, #d61212, #0065c3, #d61212);
+}
+
+.card-right .content a:hover {
+    background: linear-gradient(to top left, #d61212, #0065c3, #d61212);
+}
