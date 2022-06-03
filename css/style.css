@@ -19,7 +19,12 @@
     z-index: 9999;
     width: 100%;
 }
-
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+}
 #logo .logo-rotate {
     background-color: #fff;
     width: 60px;
@@ -39,7 +44,16 @@
     list-style: none;
     gap: 30px;
 }
-
+#menu-toggle{
+    color: #fff;
+    display: none;
+    font-size: 30px;
+}
+#menu-close{
+    display: none;
+    font-size: 30px;
+    color: #fff;
+}
 .menu-link {
     text-decoration: none;
     color: #fff;
@@ -537,5 +551,5 @@
 
 .footer-social a i {
     color: #fff;
-    padding: 10px;
+    padding: 20px;
 }

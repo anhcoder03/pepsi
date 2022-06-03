@@ -1,0 +1,158 @@
+@media screen and (max-width: 767.98px) {
+    #logo .logo-rotate {
+        width: 50px;
+        height: 50px;
+    }
+    .logo-rotate img{
+        width: 100%;
+    }
+    .container-header.is-show{
+        transform: none;
+    }
+    .container-header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(to left bottom, #44163e, #0b0547);
+        width: 300px;
+        height: 100%;
+        transform: translate(100%, 0);
+        transition: all 0.5s linear;
+        gap: 50px;
+        padding: 30px 20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    #menu{
+        flex-direction: column;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #menu-close{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    #search input{
+        width: 90%;
+    }
+
+    #content{
+        padding-top: 70px;
+    }
+
+    .pepsi-nitro-flex{
+        flex-direction: column-reverse;
+    }
+    .pepsi-nitro-left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pepsi-nitro-left img {
+        width: 70%;
+    }
+    .pepsi-nitro-right img{
+        width: 60%;
+    }
+    .pepsi-zero-sugar-flex{
+        flex-direction: column;
+    }
+    .pepsi-zero-sugar-left{
+        align-items: center;
+        width: 100%;
+    }
+    .pepsi-zero-sugar-left h1{
+        font-size: 55px;
+    }
+    .pepsi-zero-sugar-left h2{
+        font-size: 35px;
+        margin-top: -30px;
+    }
+    .pepsi-zero-sugar-left iframe{
+        width: 320px;
+        height: 200px;
+    }
+    .content-pepsi-twil-container{
+        height: auto;
+    }
+    .pepsi-twil-flex{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .pepsi-twil-left{
+        width: 100%;
+    }
+    .pepsi-twil-left img {
+        margin: 0;
+    }
+    .pepsi-twil-right {
+        width: 100%;
+    }
+    .pepsi-twil-right h1{
+        font-size: 80px;
+        line-height: 60px;
+    }
+    .smell-container{
+        padding: 50px 20px;
+    }
+    .smell-flex{
+        flex-direction: column-reverse;
+        gap: 20px;
+        height: 100%;
+        width: 100%;
+    }
+    .smell-left{
+        width: 100%;
+        text-align: center;
+    }
+    .smell-right {
+        width: 100%;
+    }
+    .smell-right img{
+        width:100%;
+    }
+    .smell-left__title h2{
+        font-size: 30px;
+    }
+    .follow-pepsi h3{
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .follow-pepsi{
+        height: 100%;
+        padding: 0 10px;
+    }
+    .follow-list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+    }
+    .follow-item{
+        height: auto;
+    }
+    #footer{
+        height: 750px;
+    }
+    .footer-logo .logo-rotate{
+        width: 80px;
+        height: 80px;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+        gap: 20px;
+
+    }
+    .footer-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-follow{
+        flex-direction: column;
+    }
+}

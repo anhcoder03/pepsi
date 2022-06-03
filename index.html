@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/img" href="./img/logo-pepsi.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,22 +29,26 @@
                     <a href="./index.html"><img src="./img/logo-pepsi.png" alt=""></a>
                 </div>
             </div>
-            <ul id="menu">
-                <li class="menu-item"><a href="./product.html" class="menu-link">SẢN PHẨM <i
-                            class="fa-solid fa-chevron-down"></i></a></li>
-                <li class="menu-item"><a href="#" class="menu-link">TIN TỨC</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">GIỚI THIỆU</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">VỀ CHÚNG TÔI</a></li>
-            </ul>
-            <div id="search">
-                <input type="text" placeholder="Product search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <div class="container-header">
+                <i class="fa-solid fa-xmark" id="menu-close"></i>
+                <ul id="menu">
+                    <li class="menu-item"><a href="./product.html" class="menu-link">SẢN PHẨM <i
+                                class="fa-solid fa-chevron-down"></i></a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">TIN TỨC</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">GIỚI THIỆU</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">VỀ CHÚNG TÔI</a></li>
+                </ul>
+                <div id="search">
+                    <input type="text" placeholder="Product search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
 
-            <div id="dangnhap">
-                <a class="dangky" href="#">ĐĂNG KÝ</a> |
-                <a class="dangnhap" href="#">ĐĂNG NHẬP</a>
+                <div id="dangnhap">
+                    <a class="dangky" href="#">ĐĂNG KÝ</a> |
+                    <a class="dangnhap" href="#">ĐĂNG NHẬP</a>
+                </div>
             </div>
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
         </header>
 
         <section id="content">
@@ -80,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="video-1" data-aos="fade-up" data-aos-duration="3000">
+            <div class="video-1">
                 <video type="video/mp4"
                     src="https://www.pepsi.com/en-us/uploads/media/PepsiWildCherry.Copier.15.mp4"
                     autoplay="true" loop="true" muted="true"></video>
@@ -92,7 +98,7 @@
                         <div class="pepsi-twil-left">
                             <img src="./img/twil-can.png" alt="">
                         </div>
-                        <div class="pepsi-twil-right" >
+                        <div class="pepsi-twil-right">
                             <h1>THAT'S WHAT <br> I LIKE <span>®</span> </h1>
                         </div>
                     </div>
@@ -103,9 +109,7 @@
                 <div class="smell-flex">
                     <div class="smell-left">
                         <div class="smell-left__title">
-                            <h2>Tất cả hương vị</h2>
-                            <h2>Yêu thích của bạn</h2>
-                            <h2>đều ở đây</h2>
+                            <h2>tất cả các hương vị yêu thích đều ở đây</h2>
                         </div>
                         <div class="smell-disc">
                             <p>Pepsi. Pepsi ăn kiêng. Pepsi Không Đường. Cả nhóm đều ở đây. So sánh hương vị,
@@ -190,6 +194,7 @@
         </footer>
     </div>
     <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
