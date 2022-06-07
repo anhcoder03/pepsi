@@ -285,7 +285,7 @@
 }
 
 .card-right:hover .circle:before {
-    background: #bb9339;
+    background: #0065c3;
     clip-path: circle(400px at center);
     transition: 0.3s;
 }
@@ -347,4 +347,11 @@
 
 .card-right .content a:hover {
     background: linear-gradient(to top left, #d61212, #0065c3, #d61212);
+}
+
+
+/* background */
+
+.bg-2:hover{
+    background-color: #0065c3;
 }

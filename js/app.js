@@ -16,7 +16,6 @@
 const menuToggle = this.document.querySelector("#menu-toggle");
 const MenuClose = this.document.querySelector("#menu-close");
 const menu = this.document.querySelector(".container-header");
-const menuOut = this.document.querySelector("#menu");
 
 function inMenu() {
     menu.classList.add('is-show');
